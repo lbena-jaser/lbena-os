@@ -1,0 +1,113 @@
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  overflow: hidden;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
+/*home*/
+.display{
+  display: flex;
+  width: 100%;
+  height: 100svh;
+  flex-direction: column;
+  font-family: monospace;
+}
+.restOfdiplay{
+  background-image: url('../public/backgroundimages/windows-98.webp');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width:100%;
+}
+.navbar{
+  height: 2.5rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.795);
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuButton{
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+
+/*menu*/
+.menu{
+  position: absolute;
+  bottom: 3.3rem;
+  left: 33%;
+  background-color:rgb(255, 255, 255);
+  width: 33.33%;
+  height: 35rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.inactive-menu{
+  display: none;
+}
+.active-menu{
+  display: block;
+}
+#menuSearch{
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+#menuSearch input{
+  width: 100%;
+  border: none;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  padding: 10px;
+}
+#menuSearch input:focus{
+  outline: purple solid 1px;
+}
+
+
+#menuPined{
+  height: 77%;
+  padding: 0 2rem;
+}
+
+
+
+#menuBottom{
+  padding: 2rem 4rem;
+  border-top: 1px rgba(0, 0, 0, 0.212) solid;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.Profilephoto,.powerMenu{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: black;
+}
